@@ -3,9 +3,8 @@
     <header>
            <div class="jumbotron">
          <h1>Welcome To Yelp Camp</h1>
-         <p><a class="btn btn-primary btn-large" href="/camp/new">add newcamp ground</a> </p>
-         
-        </div>
+         <p><a class="btn btn-primary btn-large" href="/camp/new">Add New Destination </a> </p>
+         </div>
     </header>
     
 
@@ -17,13 +16,10 @@
                   <h5 class="card-title"><%= campground.name %></h5>
                   <p class="card-text"><%= campground.description%></p>
                   <p>
-                    <a href="/camp/<%= campground._id %>" class="btn btn-primary">submit</a>
+                    <a href="/camp/<%= campground._id %>" class="btn btn-primary">More</a>
                 </p>
                 </div>
               </div>
-
-            
         <% }); %>
     </div>
-
  <%- include ('../partials/footer') %>

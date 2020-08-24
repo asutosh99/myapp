@@ -11,7 +11,6 @@
 <body>
     
 
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="/camp">   YelpCamp</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +26,7 @@
             <li><a class="nav-link" href="/login">Login</a></li>
                 <li><a class="nav-link" href="/register">Sign Up</a></li>
             <% }else{ %>
-              <li><a href="/camp">Signed In As <%= currentUser.username %></a></li>
+              <li><a href="/camp">Signed In as <%= currentUser.username %></a></li>
               <li><a class="nav-link" href="/logout">Logout</a></li>
            <% } %>
           </ul>
